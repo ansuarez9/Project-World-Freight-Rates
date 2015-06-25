@@ -1,0 +1,914 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+					/********************************/
+					/*********REPETITIVE CSS*********/
+					/********************************/
+.wTopBanner{
+	width: 100%;
+	background: #62bbb5;
+}
+.topBanner{
+	margin: 0 auto;
+	padding: 2px 32px;
+	width:950px;
+}
+.topBanner a{
+	text-decoration: none;
+	font: 14px Myriad Pro;
+	color: black;
+	float: right;
+	padding-right: 10px;
+}
+.topBanner a:hover{
+	color: white;
+}
+.clear{
+	clear: both;
+}
+.header{
+	width: 100%;
+	background:#0e4548;
+}
+.wrapper{
+	width: 950px;
+	margin: 0 auto;
+}
+.logo{
+	padding-top: 5px;
+	cursor:pointer;
+}
+.nav{
+	margin-top: -48px;
+	margin-bottom: 74px;
+	height:25px;
+}
+.nav a{
+	font: 16px Myriad Pro;
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	float: right;
+	padding-top: 5px;
+}
+.nav a:hover{
+	color: #fbe5d6;
+}
+.city{
+	width:100%;
+}
+					/********************************/
+					/******END OF REPETITIVE CSS*****/
+					/********************************/
+
+					/********************************/
+					/*BEGINNING OF CSS FOR home.html*/
+					/********************************/
+.leftSide{
+	float: left
+}
+.leftSide h2{
+	font: 32px Cantarell Bold;
+	color: #fbe5d6;
+}
+.leftSide p{
+	font: 16px Cantarell;
+	color: white;
+	width: 595px;
+	padding-top: 23px;
+}
+.plane{
+	margin-top: 80px;
+	margin-left: 310px;
+}
+.rightSide{
+	float: right;
+	width: 350px;
+	margin-top: -200px;
+}
+.calculator{
+	width: 230px;
+	height: 192px;
+	border: 1px solid #274c4e;
+	background: #274c4e;
+	margin-left: 120px;
+	margin-bottom: 140px;
+	margin-top: -30px;
+	border-radius:10px;
+}
+.calculator h3{
+	color: #fbe5d6;
+	font: 19px Cantarell Bold;
+	padding-left: 22px;
+	padding-top: 23px;
+}
+.calculator p{
+	color: white;
+	font: 16px Cantarell;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-left: 22px;
+	width:150px;
+	height: 40px;
+}
+.button{
+	width: 198px;
+	height: 43px;
+	border: 1px solid #62bbb5;
+	border-radius: 10px;
+	background: #62bbb5;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.button h5{
+	color: #306f6f;
+	padding-top: 16px;
+	padding-left: 38px;
+}
+.train{
+	padding-left: 120px;
+	margin-top: -22px;
+}
+.centerPart{
+	width: 100%;
+}
+.midBox{
+	width: 190px;
+	height: 198px;
+	float: left;
+	display: inline-block;
+	padding-right: 45px;
+	padding-top: 36px;
+	padding-bottom: 40px;
+}
+.midBox h2{
+	font: 19px Cantarell regular;
+	color: #6f6f6f;
+	padding-bottom: 12px;
+}
+.midBox p{
+	font: 14px Cantarell regular;
+	padding-bottom: 36px;
+	color: #6c6b6a;
+}
+.midBox a{
+	color: black;
+	text-decoration: none;
+	font: 16px Myriad Pro regular;
+}
+.midBox a:hover{
+	text-decoration: underline;
+}
+
+.bottom{
+	background: black;
+	margin-top: -4px;
+	height: 204px;
+}
+.button h5:hover{
+	color: black;
+}
+.box{
+	width: 150px;
+	height: 100px;
+	float: left;
+	display: inline-block;
+	padding-right: 85px;
+	padding-top: 45px;
+	padding-bottom: 48px;
+}
+.box ul li{
+	font: 14px Cantarell Bold;
+	color: #81807f;
+	list-style: none;
+	padding-bottom: 24px;
+}
+.box a{
+	font: 12px Cantarell Regular;
+	color: #81807f;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 13px;
+}
+.box img{
+	display: block;
+	padding-bottom: 5px;
+}
+.box h3{
+	font: 12px Cantarell Regular;
+	color: #81807f;
+}
+.copyright{
+	font: 12px Cantarell Regular;
+	color: #81807f;
+	padding-top: 13px;
+}
+					/********************************/
+					/**ENDING OF CSS FOR home.html**/
+					/********************************/
+					
+					/********************************/
+					/*BEGINNING OF CSS FOR news.html*/
+					/********************************/
+
+.overall{
+	width: 100%
+	height: 100%
+	background: #0e4548;
+}
+.midSection{
+	padding-top: 37px;
+	margin-top: -68px;
+	width: 100%;
+	background: #0e4548;
+}
+.navLeft{
+	float: left;
+	clear: both;
+}
+.navLeft h1{
+	font: 14px Cantarell Bold;
+	color: white;
+	padding-left: 33px;
+	padding-bottom: 18px;
+}
+.navLeft a{
+	text-decoration: none;
+	color: white;
+	font: 14px Cantarell Regular;
+	display: block;
+	margin-left: 33px;
+	padding: 10px 0;
+	border-bottom: 1px solid white;
+}
+.navLeft a:hover{
+	background: white;
+	color: black;
+	border: 1px solid white;
+}
+.navRight{
+	float: right;
+}
+.navRight h1{
+	font: 12px Cantarell Bold;
+	color: white;
+}
+.line{
+	border-bottom: 1px solid #336063;
+	margin-top: 234px;
+	margin-left: -8px;
+	margin-right: 48px;
+}
+.navBox{
+	width: 190px;
+    height: 174px;
+	float: left;
+	display: inline-block;
+	padding-right: 45px;
+	padding-top: 36px;
+	padding-bottom: 40px;
+}
+.whiteBox{
+	background: white;
+	border: 1px solid white;
+	width: 190px;
+	height: 16px;
+	margin-top: -18px;
+	margin-bottom: 12px;
+	margin-left: -8px;
+}
+.navBox h2{
+	font: 14px Cantarell bold;
+	color: white;
+	padding-bottom: 12px;
+}
+.navBox p{
+	font: 12px Cantarell regular;
+	padding-bottom: 36px;
+	color: white;
+}
+.navBox a{
+	color: white;
+	text-decoration: underline;
+	font: 14px Myriad Pro regular;
+}
+.blackCity{
+	width: 100%;
+}
+.newsBottom{
+	background: #1d1b19;
+	height: 204px;
+	margin-top: -4px;
+}
+.overall{
+	background: #0e4548;
+}
+.selected{
+	border-top: 4px solid #62bbb5;
+	margin-top: -4px;
+}
+a.selected:hover {
+	color: white;
+}
+					/************************************/
+					/****ENDING OF CSS FOR news.html*****/
+					/************************************/
+					
+					/************************************/
+					/*BEGINNING OF CSS FOR exchange.html*/
+					/************************************/
+
+.blank{
+	margin-top: -60px;
+	height: 15px;
+}
+.middleExchange{
+	
+}
+.exchangeLeft{
+	float:left;
+	width:230px;
+	padding-top: 36px;
+}
+.exchangeLeft h2{
+	font: 16px Cantarell Bold;
+	color: #474848;
+	padding-bottom: 11px;
+	padding-top: 11px;
+}
+.portsBox{
+	border: 1px solid #b6b5b5;
+	border-radius: 10px;
+	background: #b6b5b5;
+	padding-top: 14px;
+	padding-bottom: 49px;
+	padding-left: 11px;
+}
+.portsBox input{
+	display:block;
+	font: 14px Cantarell Bold;
+	color: #b6b5b5;
+	width: 192px;
+	height: 32px;
+}
+.ports{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.submit{
+	border: 1px solid #62bbb5;
+	background: #62bbb5;
+	border-radius: 10px;
+	padding: 9px 16px;
+	height: 28px;
+	width: 86px;
+	margin-bottom: -34px;
+}
+.submit:hover{
+	cursor: pointer;
+}
+.submit h3{
+	font: 14px Cantarell Bold;
+	color: white;
+}
+.submit h3:hover{
+	color: black;
+	cursor: pointer;
+}
+.immediateEstimates{
+	border: 1px solid #62bbb5;
+	border-radius: 10px;
+	background: #62bbb5;
+	margin-top: 14px;
+	width: 207px;
+	height: 38px;
+}
+.immediateEstimates h1{
+	font: 14px Cantarell Bold;
+	color: white;
+	margin: 14px 12px 14px 18px;
+}
+.immediateEstimates:hover{
+	cursor: pointer;
+}
+.immediateEstimates h1:hover{
+	cursor:pointer;
+	color:black;
+}
+.exchangeLeft p{
+	padding-top:20px;
+	margin-left: 6px;
+}
+.exchangeRight{
+	float:right;
+	width: 675px;
+	height: 690px;
+	padding-right: 31px;
+	margin-top: 56px;
+}
+.topExchangeRight{
+	
+}
+.topExchangeRight h1{
+	float:left;
+	color: #8a8989;
+	font: 45px Cantarell Bold;
+}
+.post{
+	border: 1px solid #62bbb5;
+	margin-top: 8px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	display:inline-block;
+	width: 74px;
+	background:#62bbb5;
+	border-radius: 5px;
+}
+.post:hover{
+	cursor: pointer
+}
+.topExchangeRight h5{
+	padding: 9px 12px;
+	font: 14px Cantarell Bold;
+	color: white;
+}
+.topExchangeRight h5:hover{
+	color: black;
+	cursor: pointer;
+}
+.exchangeRight p{
+	padding-top: 16px;
+	font: 16px Cantarell regular;
+}
+.exchangeRight a{
+	color: #62bbb5;
+}
+.exchangeBottom{
+	background: black;
+}
+
+					/************************************/
+					/****END OF CSS FOR exchange.html****/
+					/************************************/
+
+
+					/************************************/
+					/**BEGINNING OF CSS FOR quote.html***/
+					/************************************/
+
+.quotes{
+	padding-bottom: 30px;
+}
+.quotes h1{
+	font: 45px Cantarell Bold;
+	color: #fbe5d6;	
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.quotes p{
+	font: 16px Cantarell Regular;
+	color: #eceaea;	
+}
+.quotes p a{
+	color: #5db3ae;
+}
+.qTotal{
+	height:195px;
+	background: #466b6d;
+	margin-bottom: 8px;
+	border-radius: 15px;
+}
+.qTotal h1{
+	font: 60px Cantarell Bold;
+	color: #62bbb5;
+	text-align:center;
+	margin-bottom: 20px;
+	letter-spacing: 3px;
+}
+.qTotal h2{
+	font: 28px Cantarell Bold;
+	color: #fbe5d6;
+	text-align:center;
+	padding-top: 20px;
+}
+.qTotal h3{
+	color: white;
+	font: 14px cantarell;
+	margin-left:335px;
+}
+.qTotal h4{
+	font-family: cantarell;
+	font-size: 18px;
+	color: #62bbb5;
+	margin-left: 544px;
+	margin-top:-20px;
+}
+.qTotal h3 a{
+	font: 14px Cantarell Bold;
+	color: #377d7b;
+	text-decoration: none;
+	padding: 18px 19px 16px 18px;
+	border-radius: 12px;
+	background: #62bbb5;
+	margin-right: 4px;
+}
+.maps {
+	text-align: center;
+	background: #466b6d;
+	padding-top: 8px;
+	padding-bottom:16px;
+	border-radius: 15px;
+}
+.quoteCity{
+	background: #0e4346;
+	width:100%;
+}
+
+					/************************************/
+					/*****END OF CSS FOR quote.html******/
+					/************************************/
+
+
+
+
+
+
+
+
+
